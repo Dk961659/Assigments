@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Robot", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(233, 252, 252);
+}
+.effect {
+  display: flex;
+  flex-direction: column;
+}
+.effect h1 {
+  font-family: "Roboto";
+  font-size: 3vmax;
+  font-weight: bold;
+  color: rgb(29, 29, 29);
+  margin: 30px 0px;
+}
+.effect ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0px;
+  
+  cursor: pointer;
+}
+.effect ul li:active {
+  transform: scale(0.8);
+}
+.colors {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(72, 70, 70);
+
+  margin: 0px 0px 30px 0xp;
+  list-style: none;
+}
+.effect h2 {
+  margin: 5px 0px;
+  font-size: 1.5vmax;
+}
+.effect h3 {
+  margin: 5px 0px;
+  font-size: 1.5vmax;
+  font-weight: 100;
+}
+.effect p {
+  margin: 10px 0px;
+  font-size: 1vmax;
+  font-weight: 100;
+}
+input[type="file"] {
+  display: none;
+}
+.effect label {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgb(7, 140, 242);
+  text-align: center;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  user-select: none;
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+}
+#imageup {
+  font-size: 20px;
+  font-weight: 100;
+  position: absolute;
+  color: #fff;
+  left: 20px;
+}
+label:active {
+  transform: scale(0.9);
+}
+
+.umbrella img {
+  width: 650px;
+  height: 600px;
+  position: relative;
+}
+#spanForLogo {
+  z-index: 10;
+  position: absolute;
+  bottom: 175px;
+  left: 490px;
+}
+#spanForLogo img {
+  width: 100px;
+  height: 20px;
+  
+}
+
+.umb1 {
+  background-color: yellow;
+  border: 4px solid rgb(202, 202, 108);
+}
+.umb2 {
+  background-color: pink;
+  border: 4px solid rgb(191, 189, 189);
+}
+.umb3 {
+  background-color: blue;
+  border: 4px solid rgb(147, 147, 229);
+}
+
+/* #loading{
+    background-image: url(./image/loader_icon.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+  
+animation: rotation 10s infinite  linear;
+}  */
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+    
+}

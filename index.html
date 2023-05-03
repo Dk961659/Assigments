@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="umbrella" id="loading">
+        <!-- <img src="./image/loader_icon.svg" alt="" id="loading"> -->
+        <!-- bydefault image is see on the screen  -->
+        <img src="image/Blue umbrella.png" id="image" />
+        <div id="spanForLogo"></div>
+      </div>
+      <div class="effect">
+        <h1>Custom Umbrella</h1>
+        <ul>
+          <li class="colors umb1" onclick="yellowUmb()"></li>
+          <li class="colors umb2" onclick="blueUmb()"></li>
+          <li class="colors umb3" onclick="pinkUmb()"></li>
+        </ul>
+        <h2>Customize your umbrella</h2>
+
+        <h3>Upload a logo for a instant preview.</h3>
+
+        <p>.png and .jpg file only. Max file size is 5MB.</p>
+        <!-- <i class="fa-"></i> -->
+        <input type="file" id="inputBtn" accept=".jpeg, .jpg, .png" />
+        <label for="inputBtn"
+          ><img
+            src="./image/upload_icon.svg"
+            alt="uploadIcon"
+            style="color: white"
+            id="imageup"
+          />
+          UPLOAD LOGO</label
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
